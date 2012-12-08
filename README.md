@@ -7,7 +7,7 @@ BrowserBlast is a lightweight and fully customisable jQuery plugin to display a 
 
 ### Demo
 
-*Coming soon!*
+<http://markgoodyear.github.com/BrowserBlast>
 
 
 ### Download
