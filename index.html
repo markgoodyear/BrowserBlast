@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Browserblast by markgoodyear</title>
+    <title>BrowserBlast by Mark Goodyear</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -23,159 +23,23 @@
         });
     </script>
   </head>
-  <body>
+  <body id="demo-page">
     <div class="wrapper">
-      <header class="without-description">
-        <h1>BrowserBlast</h1>
-        <p></p>
-        <p class="view"><a href="https://github.com/markgoodyear/BrowserBlast">View the Project on GitHub <small>markgoodyear/BrowserBlast</small></a></p>
-        <ul>
-          <li><a href="https://github.com/markgoodyear/BrowserBlast/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/markgoodyear/BrowserBlast/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/markgoodyear/BrowserBlast">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        
+     
+      <h1>BrowserBlast</h1>
+      
+      <p>BrowserBlast is a lightweight and fully customisable jQuery plugin to display a warning for users of IE7 and below to let them know their browser isn’t supported anymore.</p>
 
-<h2>Overview</h2>
+      <!-- <a class="back">View article</a> -->
 
-<p>BrowserBlast is a lightweight and fully customisable jQuery plugin to display a warning for users of IE7 and below to let them know their browser isn’t supported anymore.</p>
+      <h3>Download</h3>
+      <ul>
+        <li><a href="https://github.com/markgoodyear/BrowserBlast/zipball/master">Download <strong>ZIP File</strong></a></li>
+        <li><a href="https://github.com/markgoodyear/BrowserBlast/tarball/master">Download <strong>TAR Ball</strong></a></li>
+        <li><a href="https://github.com/markgoodyear/BrowserBlast">View On <strong>GitHub</strong></a></li>
+      </ul>
 
-<h3>Demo</h3>
 
-<p><a href="http://markgoodyear.github.com/BrowserBlast/">http://markgoodyear.github.com/BrowserBlast/</a></p>
-
-<h3>Download</h3>
-
-<p><a href="https://github.com/markgoodyear/browserblast">https://github.com/markgoodyear/browserblast</a></p>
-
-<h2>How to use</h2>
-
-<p>Include the <code>jquery.browserblast.min.js</code> file in your document and place the following into the head of your document to initiate the plugin. Make sure you've also included jQuery.</p>
-
-<pre><code>&lt;script&gt;
-$(function () {
-    $.browserBlast({
-        // Settings here
-    });
-});
-&lt;/script&gt;
-</code></pre>
-
-<h3>Options</h3>
-
-<table>
-<tr>
-<th align="left">Option</th>
-<th align="left">Default</th>
-<th align="left">Usage</th>
-</tr>
-<tr>
-<td align="left">devMode</td>
-<td align="left"><code>'false'</code></td>
-<td align="left">Set <code>true</code> to display banner on all browsers</td>
-</tr>
-<tr>
-<td align="left">supportedIE</td>
-<td align="left"><code>'8'</code></td>
-<td align="left">Set which version of IE you support</td>
-</tr>
-<tr>
-<td align="left">customCSS</td>
-<td align="left"><code>false</code></td>
-<td align="left">Set <code>true</code> to use custom CSS</td>
-</tr>
-<tr>
-<td align="left">fixed</td>
-<td align="left"><code>true</code></td>
-<td align="left">Set <code>false</code> to toggle fixed or non-fixed banner</td>
-</tr>
-<tr>
-<td align="left">linkColor</td>
-<td align="left"><code>'#56a119'</code></td>
-<td align="left">Set link color</td>
-</tr>
-<tr>
-<td align="left">linkHover</td>
-<td align="left"><code>'#333'</code></td>
-<td align="left">Set link hover color</td>
-</tr>
-<tr>
-<td align="left">linkUnderline</td>
-<td align="left"><code>'true'</code></td>
-<td align="left">Use <code>false</code> for no underline</td>
-</tr>
-<tr>
-<td align="left">bannerHeight</td>
-<td align="left"><code>'40'</code></td>
-<td align="left">Banner height in px</td>
-</tr>
-<tr>
-<td align="left">background</td>
-<td align="left"><code>'#FAF4AF'</code></td>
-<td align="left">Background colour of the bar</td>
-</tr>
-<tr>
-<td align="left">textColor</td>
-<td align="left"><code>'#333'</code></td>
-<td align="left">Text color</td>
-</tr>
-<tr>
-<td align="left">fontSize</td>
-<td align="left"><code>'12px'</code></td>
-<td align="left">Font size of the message</td>
-</tr>
-<tr>
-<td align="left">fontFamily</td>
-<td align="left"><code>'sans-serif'</code></td>
-<td align="left">
-<code>sans</code> / <code>sans-serif</code>, or define a css font-stack</td>
-</tr>
-<tr>
-<td align="left">borderSize</td>
-<td align="left"><code>'2'</code></td>
-<td align="left">Border size in px</td>
-</tr>
-<tr>
-<td align="left">borderStyle</td>
-<td align="left"><code>'solid'</code></td>
-<td align="left">Style of the border, <code>solid</code>, <code>dotted</code>, <code>dashed</code>
-</td>
-</tr>
-<tr>
-<td align="left">borderColor</td>
-<td align="left"><code>'#D4C790'</code></td>
-<td align="left">Color of the border</td>
-</tr>
-<tr>
-<td align="left">warningID</td>
-<td align="left"><code>'unsupported'</code></td>
-<td align="left">Set the selector ID for the banner</td>
-</tr>
-</table><h4>Custom message</h4>
-
-<p>You can set a custom message with the <code>message</code> option to overide the default message:</p>
-
-<pre><code>message: "Stop using IE!"
-</code></pre>
-
-<h2>Support</h2>
-
-<p>If you have any issues, feedback or suggestions, please send an email to hello[at]markgoodyear.com or find me on Twitter <a href="http://twitter.com/markgdyr">@markgdyr</a>.</p>
-
-<h2>Version history</h2>
-
-<ul>
-<li>1.0.0 - Initial release</li>
-</ul>
-      </section>
-    </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/markgoodyear">markgoodyear</a></p>
-      <p>Hosted on GitHub Pages</p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
