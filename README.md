@@ -7,7 +7,7 @@ BrowserBlast is a lightweight and fully customisable jQuery plugin to display a 
 
 ### Demo
 
-<http://markgoodyear.github.com/BrowserBlast>
+<http://markgoodyear.com/labs/browserblast/>
 
 
 ### Download
@@ -17,7 +17,7 @@ BrowserBlast is a lightweight and fully customisable jQuery plugin to display a 
 
 ## How to use
 
-Include the `jquery.browserblast.min.js` file in your document and place the following into the head of your document to initiate the plugin. Make sure you've also included jQuery.
+Include the `jquery.browserBlast.min.js` file in your document and place the following into the head of your document to initiate the plugin. Make sure you've also included jQuery.
 
 	
 	<script>
