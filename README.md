@@ -14,6 +14,9 @@ BrowserBlast is a lightweight and fully customisable jQuery plugin to display a 
 
 <https://github.com/markgoodyear/browserblast>
 
+### Article
+<http://markgoodyear.com/2012/12/moving-past-ie7-with-browserblast-plugin>
+
 
 ## How to use
 
